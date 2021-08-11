@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+h1 {
+  text-align: center;
+  font-family: 'Emilys Candy', cursive;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 50px;
+
+}
+
+.container { 
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(5,10,5,0.80), rgba(90,40,90,0.80)), url(https://previews.123rf.com/images/mazzzur/mazzzur1808/mazzzur180800134/107633298-assorted-gummy-candies-in-the-shop-top-view-jelly-sweets-.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.navBar { 
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo{
+  width: 130px;
+  cursor:pointer;
+  
+}
+
+
+.navBar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px 20px;
+  position: relative;
+
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase  ;
+}
+
+
+
+
+.navBar ul li::before {
+  content:"";
+  height: 3px;
+  width: 0%;
+  background: yellowgreen;
+  position: absolute;
+  left:0 ;
+  bottom: -12px;
+  transition: 0.4s ease-out;
+}
+
+.navBar ul li:hover::before {
+  width: 100%;
+}
+
+
+img { 
+  display: flex;
+  width: 30px;
+  height: auto;
+}
+
+
