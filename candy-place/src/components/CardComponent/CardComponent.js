@@ -1,15 +1,15 @@
-import React from 'react';
-import { Card, Image } from 'semantic-ui-react';
+import React from 'react'
+import { Card, Image } from 'semantic-ui-react'
 
-const CardComponent = ({ id, name, img, stock }) => (
-    <Card>
+
+const CardComponent = ({ name, img, stock }) => (
+    <Card className="estilosCards" style={{ height: 400, margin: 20 }}>
         <Image src={img} wrapped ui={false} />
         <Card.Content>
-            <Card.id>{id}</Card.id>
             <Card.Header>{name}</Card.Header>
-            <Card.Stock>{stock}</Card.Stock>
+            <Card.Meta><span className="date">{stock}</span></Card.Meta>
         </Card.Content>
     </Card>
-);
+)
 
-export default CardComponent;
+export default CardComponent

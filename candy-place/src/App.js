@@ -15,13 +15,32 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <CardComponent
-          id='1'
-          name='Dientes de Dracula'
-          img='https://http2.mlstatic.com/D_NQ_NP_853655-MLA40543347879_012020-O.jpg'
-          stock='500'
-        />
-
+        <div className="card-container">
+          <CardComponent
+            id='1'
+            name='Dientes de Dracula'
+            img='https://http2.mlstatic.com/D_NQ_NP_853655-MLA40543347879_012020-O.jpg'
+            stock='500'
+          />
+          <CardComponent
+            id='1'
+            name='Dientes de Dracula'
+            img='https://http2.mlstatic.com/D_NQ_NP_853655-MLA40543347879_012020-O.jpg'
+            stock='500'
+          />
+          <CardComponent
+            id='1'
+            name='Dientes de Dracula'
+            img='https://http2.mlstatic.com/D_NQ_NP_853655-MLA40543347879_012020-O.jpg'
+            stock='500'
+          />
+          <CardComponent
+            id='1'
+            name='Dientes de Dracula'
+            img='https://http2.mlstatic.com/D_NQ_NP_853655-MLA40543347879_012020-O.jpg'
+            stock='500'
+          />
+        </div>
       </div >
     );
   }
