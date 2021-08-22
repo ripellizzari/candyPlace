@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+div h1 {
+  text-align: center;
+  font-family: 'Emilys Candy', cursive;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 50px;
+
+}
+
+.container { 
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(5,10,5,0.80), rgba(90,40,90,0.80)), url(https://previews.123rf.com/images/mazzzur/mazzzur1808/mazzzur180800134/107633298-assorted-gummy-candies-in-the-shop-top-view-jelly-sweets-.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.navBar { 
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo{
+  width: 130px;
+  cursor:pointer;
+  
+}
+
+
+.navBar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px 20px;
+  position: relative;
+
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase  ;
+}
+
+
+
+
+.navBar ul li::before {
+  content:"";
+  height: 3px;
+  width: 0%;
+  background: yellowgreen;
+  position: absolute;
+  left:0 ;
+  bottom: -12px;
+  transition: 0.4s ease-out;
+}
+
+.navBar ul li:hover::before {
+  width: 100%;
+}
+
+
+.logoCandyPlace { 
+  display: flex;
+  width: 150px;
+  height: auto;
+}
+
+
+.logoCarrito {
+  width: 36px;
+  height: 36px;
+  border-style: none;
+  
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.estilosCards {
+  text-align: center;
+}
+
+
+.botonContador {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+.botonContador {
+  padding: 20px;
+}
+
+
+
+
+
+
+
