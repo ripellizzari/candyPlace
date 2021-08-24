@@ -3,7 +3,7 @@ import { Card, Image } from 'semantic-ui-react'
 import ItemCount from '../ItemCount/ItemCount'
 
 
-const CardComponent = ({ name, img, stock }) => (
+const CardContent = ({ name, img, stock }) => (
     <Card className="estilosCards" style={{ height: 500, margin: 20 }}>
         <Image src={img} wrapped ui={false} />
         <Card.Content>
@@ -14,4 +14,4 @@ const CardComponent = ({ name, img, stock }) => (
     </Card>
 )
 
-export default CardComponent;
+export default CardContent;
