@@ -9,7 +9,7 @@ import './components/NavBar';
 import NavBar from './components/NavBar';
 //import CardContent from './components/CardContent/CardContent';
 import ItemListContainer from './components/Items/itemListContainer';
-
+import ItemDetailContainer from './components/Items/ItemDetailContainer/itemDetailContainer';
 
 class App extends Component {
   render() {
@@ -20,6 +20,7 @@ class App extends Component {
         </div>
         <div>
           <ItemListContainer />
+
         </div>
 
 

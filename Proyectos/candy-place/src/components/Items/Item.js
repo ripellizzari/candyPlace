@@ -2,7 +2,9 @@ import React from "react";
 import { Card, Image } from "semantic-ui-react";
 
 
-const Item = ({ product }) => (
+import ItemDetail from '../Items/ItemDetailContainer/ItemDetail'
+
+const Item = ({ product, detail }) => (
     <Card className="card">
         <Image src={product.image} className="image" />
         <Card.Content>
@@ -11,10 +13,11 @@ const Item = ({ product }) => (
                 <span className="category">{product.category}</span>
             </Card.Meta>
             <Card.Description>${product.price}</Card.Description>
-            <Card.Content extra>
-                <button>Mas Detalles</button>
-            </Card.Content>
+            <Card.Description>
+                {product.description}
+            </Card.Description>
         </Card.Content>
+
     </Card>
 );
 
