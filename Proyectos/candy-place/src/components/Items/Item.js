@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Image } from "semantic-ui-react";
 
 
-import ItemDetail from '../Items/ItemDetailContainer/ItemDetail'
+//import ItemDetail from '../Items/ItemDetailContainer/ItemDetail'
 
 const Item = ({ product, detail }) => (
     <Card className="card">

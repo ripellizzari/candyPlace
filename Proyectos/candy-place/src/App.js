@@ -1,36 +1,47 @@
 import React, { Component } from 'react';
 import './style.css';
 
+// REACT ROUTER DOM
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
+//Components
 import './components/CartWidget'
 import './components/Items/Item'
 import './components/Items/itemListContainer'
-
-import './components/NavBar';
-import NavBar from './components/NavBar';
-//import CardContent from './components/CardContent/CardContent';
+import NavBar from './components/Navbar/NavBar';
 import ItemListContainer from './components/Items/itemListContainer';
-import ItemDetailContainer from './components/Items/ItemDetailContainer/itemDetailContainer';
 
-class App extends Component {
-  render() {
-    return (
+//Views
+import About from '../src/components/views/About/About';
+import Home from '../src/components/views/Home/Home';
+import Contact from '../src/components/views/Contact/Contact';
+
+
+
+const App = () => {
+
+  return (
+    <Router>
       <div className="App">
-        <div>
-          <NavBar />
-        </div>
-        <div>
-          <ItemListContainer />
+        <Route path="/" exact component={Home} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/about" component={About} />
 
-        </div>
-
+      </div>
+      <div>
+        <NavBar />
+        <ItemListContainer />
 
       </div>
 
 
 
-    );
-  }
+
+
+    </Router >
+  );
 }
+
 
 
 export default App;
