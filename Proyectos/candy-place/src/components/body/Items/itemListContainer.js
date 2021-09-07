@@ -1,7 +1,5 @@
 import { React, useState, useEffect } from "react";
 import ItemList from "../Items/ItemList";
-import ItemDetail from '../body/ItemDetail/ItemDetailContainer'
-import ItemDetailContainer from "../body/ItemDetail/ItemDetail";
 
 
 
@@ -25,16 +23,10 @@ const ItemListContainer = () => {
 
     }, []);
 
-    return <>
-        <div>
-            <ItemList products={products} />
+    return <ItemList products={products} />;
 
 
 
-
-        </div>
-
-    </>
 
 };
 

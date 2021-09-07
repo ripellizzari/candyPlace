@@ -10,35 +10,46 @@ import './components/Items/Item'
 import './components/Items/itemListContainer'
 import NavBar from './components/Navbar/NavBar';
 import ItemListContainer from './components/Items/itemListContainer';
+import { ItemDetail } from './components/body/ItemDetail/ItemDetail'
 
 //Views
 import About from '../src/components/views/About/About';
 import Home from '../src/components/views/Home/Home';
 import Contact from '../src/components/views/Contact/Contact';
+import { Fragment } from 'react';
+
 
 
 
 const App = () => {
 
   return (
-    <Router>
-      <div className="App">
-        <Route path="/" exact component={Home} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/about" component={About} />
+    <Fragment>
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/about" component={About} />
+            <Route path="/products/:productoId" component={ItemDetailContainer} />
+          </Switch>
 
-      </div>
-      <div>
-        <NavBar />
-        <ItemListContainer />
+        </div>
 
-      </div>
+        <div>
+          <NavBar />
+          <ItemListContainer />
 
-
-
+        </div>
 
 
-    </Router >
+
+      </Router >
+
+
+
+
+    </Fragment >
   );
 }
 
