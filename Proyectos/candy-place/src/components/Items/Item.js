@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Image } from "semantic-ui-react";
-import { link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 //import ItemDetail from '../Items/ItemDetailContainer/ItemDetail'
