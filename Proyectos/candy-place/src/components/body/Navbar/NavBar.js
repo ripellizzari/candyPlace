@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CartWidget from '../../CartWidget';
 
 
@@ -13,10 +14,11 @@ const NavBar = () => {
 
 
                     <ul className="menu" tyle={{ color: "blue", backgroundColor: "yellow", display: "flex-end", }}>
-                        <li style={{ padding: 20 }}><a href="#productos">Productos</a></li>
-                        <li style={{ padding: 20 }}><a href="#contactanos">Contactanos</a></li>
-                        <li style={{ padding: 20 }}><a href="#nosotros">Nosotros</a></li >
-                        <li style={{ padding: 20 }}><a href="#carrito"><CartWidget /></a></li >
+
+                        <Link to="/">Productos</Link>
+                        <Link to="/contact">Contactanos</Link>
+                        <Link to="/about" >Nosotros</Link>
+                        <Link><CartWidget /></Link>
                     </ul >
                 </div>
             </div >

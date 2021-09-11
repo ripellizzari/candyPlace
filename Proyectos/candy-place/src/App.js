@@ -9,7 +9,7 @@ import './components/CartWidget/CartWidget'
 import './components/Items/Item'
 import './components/Items/itemListContainer'
 import NavBar from './components/Navbar/NavBar';
-import ItemListContainer from './components/Items/itemListContainer';
+
 
 import ItemDetailContainer from './components/body/ItemDetail/ItemDetailContainer'
 
@@ -31,27 +31,14 @@ const App = () => {
       <Router>
         <div className="App">
           <NavBar />
-
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact" component={Contact} />
             <Route path="/about" component={About} />
             <Route path="/products/:id" component={ItemDetailContainer} />
           </Switch>
-
-
-
-
-
         </div>
-
-
-
       </Router >
-
-
-
-
     </Fragment >
   );
 }
