@@ -4,10 +4,10 @@ import './About.css'
 
 const About = () => {
     return (
-        <div>
-            <h1>Nosotros</h1>
+        <div className="about">
+            <h1 className="titulo">Nosotros</h1>
 
-            <p>Somos una empresa familiar con mas de 30 años de experiencia en el rubro alimenticio.
+            <p className="cuerpoAbout">Somos una empresa familiar con mas de 30 años de experiencia en el rubro alimenticio.
                 Nos dedicamos a la venta y distribución tanto minorista como mayorista.
                 Contamos con un equipo multidisciplinario el cual tiene como principal objetivo la mejora continua.
                 Buscamos incesantemente la excelencia en nuestros procesos con un fuerte desarrollo del trabajo en equipo y
