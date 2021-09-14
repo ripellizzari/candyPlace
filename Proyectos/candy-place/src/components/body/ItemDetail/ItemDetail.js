@@ -1,25 +1,47 @@
 import './ItemDetail.css'
 import { Fragment } from 'react/cjs/react.production.min';
+import ItemCount from '../ItemCount/ItemCount'
+import React from 'react'
+import { Button, Card, Image } from 'semantic-ui-react'
 
 const ItemDetail = ({ producto }) => {
+
+
+    const foo = () => {
+
+    }
 
 
     return (
 
 
         <Fragment>
-
             <div className="ItemDetailContainer">
+                <Card>
+                    <Image src={producto.image} wrapped ui={false} />
+                    <Card.Content>
+                        <Card.Header>{producto.title}</Card.Header>
 
-                <h1 className="titulo">{producto.title}</h1>
+                        <Card.Description>
+                            {producto.description}
+                        </Card.Description>
+                        <ItemCount />
 
-                <h4 className="descripcion">{producto.description}</h4>
+                        <Button foo={foo}>
+                        </Button>
+                    </Card.Content>
 
-                <img className="imgDetalle" src={producto.image}></img>
 
+                </Card>
             </div>
+            )
 
-        </Fragment>
+
+
+
+
+
+        </Fragment >
     )
 }
 

@@ -1,6 +1,7 @@
 .ItemDetailContainer{
   background-color: #B28DFF;
-  height: 500px;
+  height: 700px;
+  
 
 
 
@@ -28,11 +29,20 @@
   margin-left: 40vw;
   padding:5px;
   border-radius: 15px;
-  
+  margin-bottom: 25px;
+
 }
 
+.card {
+  text-align: center;}
 
 
+
+.ItemDetailContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
 
 
 

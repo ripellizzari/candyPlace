@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
                         }
                     })
                 });
-        }, 1000);
+        }, 0);
     }, []);
 
 

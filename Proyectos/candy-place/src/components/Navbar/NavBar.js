@@ -13,10 +13,12 @@ const NavBar = () => {
 
 
                     <ul className="menu" tyle={{ color: "blue", backgroundColor: "yellow", display: "flex-end", }}>
-                        <li><Link to="/contact" style={{ padding: 20 }}>Contactanos</Link></li>
+
+
+                        <li><Link to="/" style={{ padding: 20 }}>Home</Link></li>
                         <li><Link to="/about" style={{ padding: 20 }}>Nosotros</Link ></li>
-                        <li><Link to="/products/:id" style={{ padding: 20 }}>Productos</Link></li>
-                        <li><Link to="" style={{ padding: 20 }}><CartWidget /></Link ></li>
+                        <li><Link to="/contact" style={{ padding: 20 }}>Contactanos</Link></li>
+                        <li><Link to="/products/:id" style={{ padding: 20 }}><CartWidget /></Link ></li>
                     </ul >
                 </div>
             </div >

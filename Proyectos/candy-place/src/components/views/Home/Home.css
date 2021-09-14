@@ -1,0 +1,24 @@
+.titulo {
+    color: #F6A6FF;
+}
+
+.homeContainer {
+    background-color: #B28DFF;
+    height: 300px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin:10px
+    
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    color:black
+}
