@@ -1,27 +1,34 @@
 .ItemDetailContainer{
-  background-color: #ECD4FF;
+  background-color: #B28DFF;
+  height: 500px;
+
 
 
 } 
 
 .titulo {
-  color: #85E3FF;
+  color: #F6A6FF;
   text-align: center;
 
 }
 
 
 .descripcion {
-  color: #85E3FF;
+  color: #F6A6FF;
+  font-size: 15px;
+  font-weight: bold;
   text-align: center;  
+
 }
 
 .imgDetalle {
   
-  width: 250px;
+  width: 15vw;
   height: auto; 
-  display:flex;
-
+  margin-left: 40vw;
+  padding:5px;
+  border-radius: 15px;
+  
 }
 
 

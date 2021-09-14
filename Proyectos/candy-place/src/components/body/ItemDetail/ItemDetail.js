@@ -7,13 +7,17 @@ const ItemDetail = ({ producto }) => {
     return (
 
 
-        <Fragment className="ItemDetailContainer">
+        <Fragment>
 
-            <h1 className="titulo">{producto.title}</h1>
+            <div className="ItemDetailContainer">
 
-            <h4 className="descripcion">{producto.description}</h4>
+                <h1 className="titulo">{producto.title}</h1>
 
-            <img className="imgDetalle" src={producto.image}></img>
+                <h4 className="descripcion">{producto.description}</h4>
+
+                <img className="imgDetalle" src={producto.image}></img>
+
+            </div>
 
         </Fragment>
     )
